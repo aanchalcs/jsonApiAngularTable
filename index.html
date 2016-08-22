@@ -1,0 +1,45 @@
+<!--
+Created By: Aanchal Mishra
+Application: Pulls data from public API using AngularJS, Bootstrap, HTML5, CSS3
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
+<title>Getting API[json] data in Table using AngularJS</title>
+</head>
+
+<body ng-app="myA">
+
+<div ng-controller="myC" class="container">
+<div class="row">
+<div class="col-sm-6 col-xs-offset-3">
+<table class="table table-bordered">
+
+<tr class="success">
+<th >ID</th>
+<th>Name</th>
+</tr>
+
+
+
+<tr class="warning" ng-repeat="na in dataFromApi">
+<td>{{na.id}}</td>
+<td>{{na.name}}</td>
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+
+
+<script src="js/disp.js"></script>
+<script src="js/control.js"></script>
+</body>
+</html>
